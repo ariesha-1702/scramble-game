@@ -6,12 +6,12 @@
 header{
     width: 100%;
     line-height: 15vh;
-    background-color: #20bf6c;
+    background: linear-gradient(#0f2027,#203a43,#2c5364);
 }
 h1{
     font-family: 'Carter One',cursive;
     text-align: center;
-    color: white;
+    color: teal;
     font-size: 1.8rem;
     text-transform: uppercase;
     letter-spacing: 15px;
@@ -26,23 +26,25 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7bed9f;
+    background: linear-gradient(#4ecdc4,#556270);
 }
 .game{
     width: 50%;
     height: 400px;
     padding: 20px 0;
-    background-color: #2ed573;
+    background: linear-gradient(#44a08d,#093637);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 8px 6px --6px black;
     font-family: 'Source Sans Pro',sans-serif;
+    border-radius: 25px;
 }
 h3{
     text-align: center;
     font-size: 1.5rem;
+    color: white;
 }
 input{
     width: 40%;
@@ -63,7 +65,9 @@ button{
     border: #2f3542;
     text-decoration: none;
     margin-top: 10px;
-    color: #eb4d4b;
+    color: teal;
+    border-radius: 10px;
+    
 }
 button.btn{
     font-weight: 600;

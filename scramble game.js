@@ -6,7 +6,7 @@ const btn=document.querySelector('.btn');
 let play=false;
 let newWords="";
 let randWords="";
-let swords=['table','chair','python','javascript','java','icecream','chocolate','milk'];
+let swords=['apple','mango','grapes','pineapple','litchi','orange','strawberry','peach','banana','watermelon','melon','kiwi','pear'];
 
 const createNewWords = () => {
     let ranNum=Math.floor(Math.random()*swords.length);
@@ -27,22 +27,22 @@ const scrambleWords=(arr)=>{
 btn.addEventListener('click',function(){
     if(!play){
         play=true;
-        btn.innerHTML="Guess";
+        btn.innerHTML="Check";
         guess.classList.toggle('hidden');
         newWords=createNewWords();
         randWords=scrambleWords(newWords.split("")).join("");
-        msg.innerHTML=`Guess the word : ${randWords}`;
+        msg.innerHTML=`Puzzle out the fruit : ${randWords}`;
     }else{
         let tempWord=guess.value;
         if(newWords===tempWord){
             play=false;
-            msg.innerHTML=`Awesome It's correct.It is ${newWords}`;
+            msg.innerHTML=`Well played!!`;
             btn.innerHTML="Start Again";
             guess.classList.toggle('hidden');
             guess.value="";
         }
         else{
-            msg.innerHTML=`Wrong answer!! Try again ${randWords}`;
+            msg.innerHTML=`OOPS! Its wrong!! Guess again : ${randWords}`;
 
         }
     }
